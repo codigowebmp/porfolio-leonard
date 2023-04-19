@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Satisfy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: url(img/textura.png);
+    color: #383838;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 40px auto;
+    border: 2px solid #383838;
+}
+/* SECCION INICIO */
+.inicio h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    background-color: #383838;
+    color: #fff;
+    padding: 7px;
+}
+.inicio nav{
+    display: flex;
+    justify-content: space-between;
+}
+.inicio .nav-responsive{
+    display: flex;
+    display: none;
+    justify-content: space-between;
+}
+.inicio .nav-responsive .opcion{
+    padding: 15px 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #383838;
+    transition: .3s;
+}
+.inicio nav .opcion{
+    padding: 15px 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #383838;
+    transition: .3s;
+}
+.inicio nav .opcion:hover{
+    color: #fff;
+    background-color: #383838;
+}
+.selected{
+    background-color:#b4ffc9;
+    color: #000;
+}
+.inf{
+    border-bottom: 2px solid #383838;
+}
+.der{
+    border-right: 2px solid #383838;
+}
+.sup{
+    border-top: 2px solid #383838;
+}
+.inicio .fila{
+    display: flex;
+}
+.inicio .fila .col{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.inicio .fila .col .info{
+    padding: 50px;
+}
+.inicio .fila .col h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.inicio .fila .col p{
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+.inicio .fila .col .redes a{
+    color: #383838;
+    font-size: 22px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.inicio .fila .col .redes a:hover{
+    color:#7550bf;
+}
+.inicio .fila .col .btn-descargar{
+    position: absolute;
+    bottom: 0;
+    background-color: #cdb4ff;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: #383838;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .fila .col .btn-descargar:hover{
+    background-color: #7550bf;
+    color: #fff;
+}
+.inicio .fila .col img{
+    width: 100%;
+    display: block;
+}
+.separador{
+    height: 50px;
+}
+/* SECCION HABILIDADES */
+.titulo-seccion{
+    font-family: 'satisfy';
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 35px;
+}
+.habilidades .fila{
+    display: flex;
+}
+.habilidades .fila .col{
+    padding: 50px 20px;
+}
+.habilidades .fila .col h3{
+    margin-bottom: 7px;
+}
+.habilidades .fila .container-skill{
+    width: 90%;
+    margin: 10px auto;
+    border: 2px solid #000;
+    border-radius: 30px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+.habilidades .fila .container-skill .fill-skill{
+    width: 0%;
+    background-color: #383838;
+    transition: 1s;
+}
+.habilidades .fila .col:hover .container-skill #html{
+    width: 95% !important;
+}
+.habilidades .fila .col:hover .container-skill #css{
+    width: 98% !important;
+}
+.habilidades .fila .col:hover .container-skill #js{
+    width: 80% !important;
+}
+.habilidades .fila .col:hover .container-skill #bd{
+    width: 85% !important;
+}
+.habilidades .fila .col:hover .container-skill #python{
+    width: 75% !important;
+}
+.habilidades .fila .col:hover .container-skill #photoshop{
+    width: 75% !important;
+}
+
+/* SECCION PORFOLIO */
+.porfolio .fila{
+    display: flex;
+}
+.porfolio .fila .col{
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.porfolio .fila .col h2{
+    text-align: center;
+    padding: 10px;
+}
+.porfolio .fila .col img{
+    width: 100%;
+    display: block;
+    filter: grayscale();
+    transition: .3s;
+}
+.porfolio .fila .col:hover img{
+    filter: grayscale(0);
+}
+.porfolio .fila .col h2{
+    margin-bottom: 7px;
+}
+.porfolio .fila .col p{
+    margin-bottom: 7px;
+}
+.porfolio .fila .col .btn-ver{
+    position: absolute;
+    bottom: -50px;
+    opacity: 0;
+    background-color:#7550bf;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color:#fff;
+    text-align: center;
+    padding: 12px;
+    font-size: 20px;
+    transition: .3s;
+}
+.porfolio .fila .col:hover .btn-ver{
+    bottom: 0;
+    opacity: 1;
+}
+/* SECCION BLOG */
+.blog .fila{
+    display: flex;
+}
+.blog .fila img{
+    width: 100%;
+}
+.blog .fila .col{
+    padding: 20px;
+    position: relative;
+}
+.blog .fila .col header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7px;
+}
+.blog .fila .col header .fecha{
+    background-color: #383838;
+    color: #fff;
+    padding: 2px 7px;
+    font-size: 14px;
+}
+.blog .fila .col p{
+    font-style: italic;
+}
+.purple{
+    background-color: #cdb4ff;
+}
+.green{
+    background-color: #b4ffc9
+}
+.blog .fila .col .btn-leer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    color: #383838;
+    text-align: center;
+    padding: 7px;
+    font-size: 16px;
+    transition: .3s;
+}
+.blog .fila .col .btn-leer:hover{
+    background-color: #7550bf;
+    color: #fff;
+}
+/* SECCION CONSULTA */
+.contacto .fila{
+    background-color: #383838;
+    color: #fff;
+    display: flex;
+    padding: 40px 20px;
+}
+.contacto .fila .col label{
+    display: block;
+    margin-bottom: 7px;
+
+}
+.contacto .fila .col{
+    width: 50%;
+}
+.contacto .fila .col input{
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+}
+.contacto .fila .col textarea{
+    width: 80%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    height: 150px;
+}
+.contacto .fila .col .btn-enviar{
+    background-color: #cdb4ff;
+    display: block;
+    width: 80%;
+    text-decoration: none;
+    color: #383838;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.contacto .fila .col .btn-enviar:hover{
+    background-color: #7550bf;
+    color: #fff;
+}
+.contacto .fila .info{
+    display: flex;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+}
+.contacto .fila .info h2{
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #b4ffc9;
+    font-weight: bold;
+}
+
+/* seccion responsive */
+@media screen and (max-width: 600px) {
+    .inicio nav{
+        display: none;
+    }
+    .inicio .nav-responsive{
+        display: flex;
+    }
+    .inicio .fila{
+        display: block;
+    }
+    .inicio .fila .col{
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    .inicio .fila .col .btn-descargar{
+        position: relative;
+    }
+    .inicio .fila .col img{
+        width: 50%;
+        margin: auto;
+    }
+    .habilidades .fila{
+        display: block;
+    }
+    .porfolio .fila {
+        display: block;
+    }
+    .porfolio .fila .col img{
+        width: 80%;
+        margin: auto;
+    }
+    .blog .fila{
+        display: block;
+    }
+    .contacto .fila{
+        display: block;
+    }
+    .contacto .fila .col{
+        width: 100%;
+    }
+    .contacto .fila .col input{
+        width: 100%;
+    }
+    .contacto .fila .col textarea{
+        width: 100%;
+    }
+    .contacto .fila .col .btn-enviar{
+        width: 100%;
+    }
+}
